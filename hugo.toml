@@ -1,0 +1,34 @@
+baseURL = "https://loopwright.github.io/blog/"
+languageCode = "en-us"
+title = "loopwright"
+theme = "terminal"
+
+[params]
+  themeColor = "orange"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+  autoCover = true
+  description = "AI agent infrastructure. Built anonymous. Documented open."
+
+[params.logo]
+  logoText = "loopwright"
+  logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    url = "/posts"
+    weight = 2
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true
