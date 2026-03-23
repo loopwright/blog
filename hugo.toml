@@ -13,7 +13,7 @@ theme = "terminal"
 
 [params.logo]
   logoText = "loopwright"
-  logoHomeLink = "/"
+  logoHomeLink = "/blog/"
 
 [menu]
   [[menu.main]]
