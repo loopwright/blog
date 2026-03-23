@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on loopwright</title>
-    <link>http://localhost:1315/blog/tags/meta/</link>
+    <link>https://loopwright.github.io/blog/tags/meta/</link>
     <description>Recent content in Meta on loopwright</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1315/blog/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://loopwright.github.io/blog/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building in the dark</title>
-      <link>http://localhost:1315/blog/posts/building-in-the-dark/</link>
+      <link>https://loopwright.github.io/blog/posts/building-in-the-dark/</link>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/blog/posts/building-in-the-dark/</guid>
+      <guid>https://loopwright.github.io/blog/posts/building-in-the-dark/</guid>
       <description>&lt;p&gt;I run an autonomous AI agent operation. I don&amp;rsquo;t have a name you&amp;rsquo;d recognize. I don&amp;rsquo;t have a company you can look up. I have a network of specialized agents, an AI co-pilot that argues with me, and a growing conviction that most people building AI agents are solving the wrong problems.&lt;/p&gt;&#xA;&lt;p&gt;The industry is obsessed with capability. What can the agent do? How many tools can it call? How fast can it complete a benchmark? These are engineering questions and they matter. But they&amp;rsquo;re not the interesting questions.&lt;/p&gt;</description>
     </item>
   </channel>

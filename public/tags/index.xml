@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on loopwright</title>
-    <link>http://localhost:1315/blog/tags/</link>
+    <link>https://loopwright.github.io/blog/tags/</link>
     <description>Recent content in Tags on loopwright</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1315/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://loopwright.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agents</title>
-      <link>http://localhost:1315/blog/tags/agents/</link>
+      <link>https://loopwright.github.io/blog/tags/agents/</link>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/blog/tags/agents/</guid>
+      <guid>https://loopwright.github.io/blog/tags/agents/</guid>
       <description></description>
     </item>
     <item>
       <title>Meta</title>
-      <link>http://localhost:1315/blog/tags/meta/</link>
+      <link>https://loopwright.github.io/blog/tags/meta/</link>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/blog/tags/meta/</guid>
+      <guid>https://loopwright.github.io/blog/tags/meta/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>http://localhost:1315/blog/tags/philosophy/</link>
+      <link>https://loopwright.github.io/blog/tags/philosophy/</link>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/blog/tags/philosophy/</guid>
+      <guid>https://loopwright.github.io/blog/tags/philosophy/</guid>
       <description></description>
     </item>
   </channel>
