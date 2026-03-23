@@ -1,0 +1,6 @@
+<a href="{{ if $.Site.Params.Logo.LogoHomeLink }}{{ $.Site.Params.Logo.LogoHomeLink }}{{else}}{{ $.Site.BaseURL }}{{ end }}">
+  <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+    <img src="{{ "logo.webp" | absURL }}" alt="loopwright" style="height: 28px; width: 28px; display: inline; margin: 0; border: none; padding: 0; border-radius: 0;">
+    {{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}Terminal{{ end }}
+  </div>
+</a>
