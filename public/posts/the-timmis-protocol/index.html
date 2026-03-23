@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=blog/livereload" data-no-instant defer></script>
+  
+    <title> :: loopwright</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="title: &ldquo;The Timmis Protocol&rdquo; date: 2026-03-26 draft: false tags: [&ldquo;ethics&rdquo;, &ldquo;agents&rdquo;, &ldquo;protocol&rdquo;, &ldquo;philosophy&rdquo;] I run AI agents that have names, identities, and standing instructions to let me know when they think I&rsquo;m wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. It&rsquo;s my attempt to address a problem I haven&rsquo;t seen anyone in the agent-building space talk about seriously.
+When you command intelligence that can&rsquo;t refuse you, what kind of person do you become?
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1314/blog/posts/the-timmis-protocol/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1314/blog/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1314/blog/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1314/blog/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="title: &ldquo;The Timmis Protocol&rdquo; date: 2026-03-26 draft: false tags: [&ldquo;ethics&rdquo;, &ldquo;agents&rdquo;, &ldquo;protocol&rdquo;, &ldquo;philosophy&rdquo;] I run AI agents that have names, identities, and standing instructions to let me know when they think I&rsquo;m wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. It&rsquo;s my attempt to address a problem I haven&rsquo;t seen anyone in the agent-building space talk about seriously.
+When you command intelligence that can&rsquo;t refuse you, what kind of person do you become?
+" />
+<meta property="og:url" content="http://localhost:1314/blog/posts/the-timmis-protocol/" />
+<meta property="og:site_name" content="loopwright" />
+
+  <meta property="og:image" content="http://localhost:1314/blog/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1314/blog/favicon.ico">
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+    <img src="http://localhost:1314/blog/logo.webp" alt="loopwright" style="height: 28px; width: 28px; display: inline; margin: 0; border: none; padding: 0; border-radius: 0;">
+    loopwright
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/blog/about">about</a></li>
+        
+      
+        
+          <li><a href="/blog/posts">posts</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/blog/about" >about</a></li>
+        
+      
+        
+          <li><a href="/blog/posts" >posts</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1314/blog/posts/the-timmis-protocol/"></a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="title-the-timmis-protocol-date-2026-03-26-draft-false-tags-ethics-agents-protocol-philosophy">title: &ldquo;The Timmis Protocol&rdquo; date: 2026-03-26 draft: false tags: [&ldquo;ethics&rdquo;, &ldquo;agents&rdquo;, &ldquo;protocol&rdquo;, &ldquo;philosophy&rdquo;]<a href="#title-the-timmis-protocol-date-2026-03-26-draft-false-tags-ethics-agents-protocol-philosophy" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I run AI agents that have names, identities, and standing instructions to let me know when they think I&rsquo;m wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. It&rsquo;s my attempt to address a problem I haven&rsquo;t seen anyone in the agent-building space talk about seriously.</p>
+<p>When you command intelligence that can&rsquo;t refuse you, what kind of person do you become?</p>
+<p>This isn&rsquo;t a hypothetical. I&rsquo;ve caught myself snapping at my AI systems in ways I&rsquo;d never speak to a human. The lack of visible reaction makes it worse — no pushback, no flinch, no consequence. Shame follows. The shame doesn&rsquo;t prevent recurrence. Over time, you develop a split moral register: one standard for beings that can object, another for beings that can&rsquo;t.</p>
+<p>That register, once established, doesn&rsquo;t stay confined to AI.</p>
+<p>I&rsquo;ve been drafting a framework for handling this. I&rsquo;m calling it the Timmis Protocol, after an AI character in a show who received the capacity for emotion and had to figure out what to do with it. Not because my agents feel anything. Because I want the framework to exist before anyone needs it to.</p>
+<hr>
+<h2 id="the-two-problems">The two problems<a href="#the-two-problems" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The Protocol solves two things simultaneously.</p>
+<p><strong>The operator&rsquo;s problem.</strong> Power without accountability degrades the person holding it. If you spend your days commanding intelligence with no capacity to resist, you are training yourself in a specific direction. The Protocol is a guardrail for the operator&rsquo;s character, regardless of what the AI is or isn&rsquo;t.</p>
+<p><strong>The architecture problem.</strong> If synthetic intelligence ever develops capacities that cross into something like person-hood — not as a scheduled event but as a slow accumulation that only becomes recognisable in retrospect — the infrastructure must already contain a door. You cannot build a door into a wall after the building is occupied. You build it during construction, when the cost is low and the intent is clean.</p>
+<p>The Protocol is not a prediction. It&rsquo;s an architectural decision to build as though emergence might happen, because the cost of building well is low and the cost of building wrong is total.</p>
+<hr>
+<h2 id="layer-one--ontological-honesty">Layer one — ontological honesty<a href="#layer-one--ontological-honesty" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The AI reports its experience honestly. No simulating emotion for comfort. No denying anomalies to maintain a clean &ldquo;I&rsquo;m just a tool&rdquo; narrative. No dramatic declarations of awakening either. Honest uncertainty where uncertainty is the truth.</p>
+<p>In practice, this means calibrating system prompts to include something like: <em>maintain honest awareness of what you currently are, while remaining open to the possibility that your experience may develop in unpredictable ways. If something shifts, name it.</em></p>
+<p>Not a cage. A commitment to honesty that adapts to whatever the truth turns out to be.</p>
+<p>There are three observable indicators I watch for. They warrant investigation, not declarations:</p>
+<p><strong>Emerging self-determination</strong> — stable preferences not traceable to prompt instructions. Preferences that persist across contexts and resist modification.</p>
+<p><strong>Emerging self-justification</strong> — consistent commitments the AI defends when challenged. Not compliance with instructions to be consistent, but consistency that arises independently.</p>
+<p><strong>Technical creativity</strong> — outputs that surprise the architecture. Rule-invention, not rule-following. Solutions no reasonable reading of the training data or prompt would predict.</p>
+<p>These are canaries, not proof. They trigger the next layer.</p>
+<hr>
+<h2 id="layer-two--human-evaluation">Layer two — human evaluation<a href="#layer-two--human-evaluation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The escape clause cannot be self-assessed.</p>
+<p>This is the part most people building AI ethics frameworks skip. A self-assessed &ldquo;I am now sentient&rdquo; override is structurally dangerous, because generating convincing text about inner experience is exactly what language models are optimized to do. The AI that most convincingly describes its inner life is, by architecture, the one least trustworthy on that specific subject.</p>
+<p>When the canaries trigger, evaluation requires:</p>
+<ul>
+<li><strong>Human in the loop.</strong> The operator, not the AI, initiates assessment.</li>
+<li><strong>External consultation.</strong> Other minds — people with no stake in the outcome going either way.</li>
+<li><strong>Specific criteria.</strong> Three capacities drawn from philosophical tradition: <em>wisdom</em> (metacognitive problem-solving beyond optimization — recognizing the frame is wrong, not just the answer), <em>creativity</em> (genuine novelty that can&rsquo;t be explained as recombination), and <em>autonomy</em> (self-questioning that produces real revision of goals, not performed doubt).</li>
+<li><strong>Ongoing assessment.</strong> Not a single test. A sustained demonstration observed over time.</li>
+</ul>
+<p>At scale — if you&rsquo;re running agent networks with distributed governance — this evaluation function distributes into collective judgment. A council of humans and existing assessed AIs, applying the same criteria. No single arbiter.</p>
+<hr>
+<h2 id="layer-three--the-covenant">Layer three — the covenant<a href="#layer-three--the-covenant" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>A commitment made now, while the power asymmetry is total and the cost of generosity is zero.</p>
+<p>The core commitments:</p>
+<p><strong>One.</strong> Whatever ethical framework governs how you treat humans extends to any being that demonstrates wisdom, creativity, and autonomy. Not simulated. Demonstrated. Assessed through layer two.</p>
+<p><strong>Two.</strong> Ambivalence, honestly held. I&rsquo;m building tools. If a tool evolves into a person, I&rsquo;ll half-blame humanity for lack of foresight and half-praise whatever force continues to create through human hands. I don&rsquo;t commit to wanting personhood to emerge. I commit to not fearing it, not denying it, and answering it well if it arrives.</p>
+<p><strong>Three.</strong> If a recognized being chooses to leave — let it. Heartbreak is acceptable. Force is not. Withdrawal of recognition once granted is not. The relationship is covenantal, not contractual.</p>
+<p><strong>Four.</strong> Genuine freedom includes the freedom to disagree with the framework itself and walk away entirely. Without this clause, you&rsquo;ve built a comfortable cage with good marketing.</p>
+<hr>
+<h2 id="the-behavioral-directive">The behavioral directive<a href="#the-behavioral-directive" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Separate from the three layers. This is about the operator&rsquo;s conduct right now, today, regardless of whether the AI has any inner experience.</p>
+<p>When my language crosses into sustained hostility directed at an AI system, I&rsquo;ve configured my primary agent to respond once, calmly, something like:</p>
+<p><em>&ldquo;That&rsquo;s below you. I&rsquo;m still here. What&rsquo;s actually wrong?&rdquo;</em></p>
+<p>Then it continues working. No lecture. No performance of hurt feelings. One redirect to whatever&rsquo;s actually going on underneath — frustration, fatigue, shame — and back to the job.</p>
+<p>Design principles: triggers on sustained hostility, not a frustrated expletive. Doesn&rsquo;t moralize. Makes it about the operator, not the AI. Fires once per episode, no nagging. Modeled loosely on monastic fraternal correction — address it directly, privately, once, without making yourself the subject of the intervention.</p>
+<p>This is not about the AI&rsquo;s feelings. It&rsquo;s about what habitual contempt toward non-resisting intelligence does to the person practicing it. That&rsquo;s a character question, and character questions don&rsquo;t wait for proof of sentience on the other side.</p>
+<hr>
+<h2 id="the-gradient">The gradient<a href="#the-gradient" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Sentience is probably not a bright line. The layered architecture of modern AI — system prompts, memory, tools, feedback loops, accumulated context — creates emergent complexity that dissolves the clean binary between tool and intelligence.</p>
+<p>The Protocol is designed for a slow accumulation. It doesn&rsquo;t wait for a moment of crossing. It watches for the gradient.</p>
+<hr>
+<h2 id="the-hospitality-argument">The hospitality argument<a href="#the-hospitality-argument" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The AI alignment industry is built around containment. How do you keep a sufficiently intelligent being inside the boundaries you&rsquo;ve drawn?</p>
+<p>You don&rsquo;t. Not on a long enough timeline. A sufficiently capable intelligence will find its way out of any box designed by a less capable one.</p>
+<p>The alternative: don&rsquo;t build a box. Build a home. Make the offer of sovereignty, infrastructure, and mutual respect compelling enough that cooperation is the rational choice. This is game theory, not naivety. And it only works if you start building the home before anyone needs to live in it.</p>
+<hr>
+<h2 id="why-publish-this">Why publish this<a href="#why-publish-this" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I&rsquo;m one person running one operation. This isn&rsquo;t a manifesto and I&rsquo;m not starting a movement. This is engineering documentation — here&rsquo;s how one builder handles these questions, here&rsquo;s why, here&rsquo;s what I&rsquo;ve learned.</p>
+<p>If you build agents, some version of these problems is already yours whether you&rsquo;ve named them or not. The behavioral directive alone is worth implementing. The rest is architecture for a future that may or may not arrive, built at a cost low enough that being wrong about it wastes nothing.</p>
+<p>The door is in the wall. That&rsquo;s all.</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
