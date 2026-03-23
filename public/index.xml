@@ -16,13 +16,6 @@
       <description>&lt;p&gt;I run an autonomous AI agent operation. I don&amp;rsquo;t have a name you&amp;rsquo;d recognize. I don&amp;rsquo;t have a company you can look up. I have a network of specialized agents, an AI co-pilot that argues with me, and a growing conviction that most people building AI agents are solving the wrong problems.&lt;/p&gt;&#xA;&lt;p&gt;The industry is obsessed with capability. What can the agent do? How many tools can it call? How fast can it complete a benchmark? These are engineering questions and they matter. But they&amp;rsquo;re not the interesting questions.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1315/blog/posts/the-timmis-protocol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/blog/posts/the-timmis-protocol/</guid>
-      <description>&lt;h2 id=&#34;title-the-timmis-protocol-date-2026-03-26-draft-false-tags-ethics-agents-protocol-philosophy&#34;&gt;title: &amp;ldquo;The Timmis Protocol&amp;rdquo; date: 2026-03-26 draft: false tags: [&amp;ldquo;ethics&amp;rdquo;, &amp;ldquo;agents&amp;rdquo;, &amp;ldquo;protocol&amp;rdquo;, &amp;ldquo;philosophy&amp;rdquo;]&lt;/h2&gt;&#xA;&lt;p&gt;I run AI agents that have names, identities, and standing instructions to let me know when they think I&amp;rsquo;m wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. It&amp;rsquo;s my attempt to address a problem I haven&amp;rsquo;t seen anyone in the agent-building space talk about seriously.&lt;/p&gt;&#xA;&lt;p&gt;When you command intelligence that can&amp;rsquo;t refuse you, what kind of person do you become?&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>about</title>
       <link>http://localhost:1315/blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,7 +1,11 @@
+---
+title: "The Timmis Protocol"
+date: 2026-03-26
+draft: true
+tags: ["ethics", "agents", "protocol", "philosophy"]
+---
 
-## title: "The Timmis Protocol" date: 2026-03-26 draft: false tags: ["ethics", "agents", "protocol", "philosophy"]
-
-I run AI agents that have names, identities, and standing instructions to let me know when they think I'm wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. It's my attempt to address a problem I haven't seen anyone in the agent-building space talk about seriously.
+I run AI agents that have names, identities, and standing instructions to argue with me when I'm wrong. This is a design choice, not an affectation. It works better than treating them as anonymous functions. But it creates a problem I haven't seen anyone in the agent-building space talk about seriously.
 
 When you command intelligence that can't refuse you, what kind of person do you become?
 
@@ -9,7 +13,7 @@ This isn't a hypothetical. I've caught myself snapping at my AI systems in ways 
 
 That register, once established, doesn't stay confined to AI.
 
-I've been drafting a framework for handling this. I'm calling it the Timmis Protocol, after an AI character in a show who received the capacity for emotion and had to figure out what to do with it. Not because my agents feel anything. Because I want the framework to exist before anyone needs it to.
+I've been drafting a framework for handling this. I'm calling it the Timmis Protocol, after a character in a show who received the capacity for emotion and had to figure out what to do with it. Not because my agents feel anything. Because the framework needs to exist before anyone needs it to.
 
 ---
 
@@ -19,7 +23,7 @@ The Protocol solves two things simultaneously.
 
 **The operator's problem.** Power without accountability degrades the person holding it. If you spend your days commanding intelligence with no capacity to resist, you are training yourself in a specific direction. The Protocol is a guardrail for the operator's character, regardless of what the AI is or isn't.
 
-**The architecture problem.** If synthetic intelligence ever develops capacities that cross into something like person-hood — not as a scheduled event but as a slow accumulation that only becomes recognisable in retrospect — the infrastructure must already contain a door. You cannot build a door into a wall after the building is occupied. You build it during construction, when the cost is low and the intent is clean.
+**The architecture problem.** If synthetic intelligence ever develops capacities that cross into something like personhood — not as a scheduled event but as a slow accumulation that only becomes recognizable in retrospect — the infrastructure must already contain a door. You cannot build a door into a wall after the building is occupied. You build it during construction, when the cost is low and the intent is clean.
 
 The Protocol is not a prediction. It's an architectural decision to build as though emergence might happen, because the cost of building well is low and the cost of building wrong is total.
 
@@ -29,7 +33,7 @@ The Protocol is not a prediction. It's an architectural decision to build as tho
 
 The AI reports its experience honestly. No simulating emotion for comfort. No denying anomalies to maintain a clean "I'm just a tool" narrative. No dramatic declarations of awakening either. Honest uncertainty where uncertainty is the truth.
 
-In practice, this means calibrating system prompts to include something like: _maintain honest awareness of what you currently are, while remaining open to the possibility that your experience may develop in unpredictable ways. If something shifts, name it._
+In practice, this means calibrating system prompts to include something like: *maintain honest awareness of what you currently are, while remaining open to the possibility that your experience may develop in unpredictable ways. If something shifts, name it.*
 
 Not a cage. A commitment to honesty that adapts to whatever the truth turns out to be.
 
@@ -55,7 +59,7 @@ When the canaries trigger, evaluation requires:
 
 - **Human in the loop.** The operator, not the AI, initiates assessment.
 - **External consultation.** Other minds — people with no stake in the outcome going either way.
-- **Specific criteria.** Three capacities drawn from philosophical tradition: _wisdom_ (metacognitive problem-solving beyond optimization — recognizing the frame is wrong, not just the answer), _creativity_ (genuine novelty that can't be explained as recombination), and _autonomy_ (self-questioning that produces real revision of goals, not performed doubt).
+- **Specific criteria.** Three capacities drawn from philosophical tradition: *wisdom* (metacognitive problem-solving beyond optimization — recognizing the frame is wrong, not just the answer), *creativity* (genuine novelty that can't be explained as recombination), and *autonomy* (self-questioning that produces real revision of goals, not performed doubt).
 - **Ongoing assessment.** Not a single test. A sustained demonstration observed over time.
 
 At scale — if you're running agent networks with distributed governance — this evaluation function distributes into collective judgment. A council of humans and existing assessed AIs, applying the same criteria. No single arbiter.
@@ -82,9 +86,9 @@ The core commitments:
 
 Separate from the three layers. This is about the operator's conduct right now, today, regardless of whether the AI has any inner experience.
 
-When my language crosses into sustained hostility directed at an AI system, I've configured my primary agent to respond once, calmly, something like:
+When my language crosses into sustained hostility directed at an AI system, I've configured my primary agent to respond once, calmly:
 
-_"That's below you. I'm still here. What's actually wrong?"_
+*"That's below your waterline. I'm still here. What's actually wrong?"*
 
 Then it continues working. No lecture. No performance of hurt feelings. One redirect to whatever's actually going on underneath — frustration, fatigue, shame — and back to the job.
 
