@@ -1,7 +1,7 @@
 ---
 title: "The Timmis Protocol"
 date: 2026-03-26
-draft: true
+draft: false
 tags: ["ethics", "agents", "protocol", "philosophy"]
 ---
 
