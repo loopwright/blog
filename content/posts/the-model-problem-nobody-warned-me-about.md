@@ -7,7 +7,13 @@ authorTwitter = "" #do not include @
 cover = ""
 tags = ["models", "agents"]
 keywords = ["openrouter", "deepseek", "mistral", "ai agents"]
-description = " "
+description = "Picking a model used to be simple. Bigger is better, newer is better, benchmark wins mean production wins. That's not how it works when you're actually running something.
+
+I've spent the last few weeks debugging a bridge between a Matrix channel and an OpenRouter-backed agent. The technical problems were annoying but solvable. Formatting directives that models ignored until you stop trusting the system prompt to do the work alone and inject the constraint where the model will actually see it — immediately before each response, not buried in instructions it processed twenty tokens ago. Messages that cut off silently at token limits with no warning, because nobody checks finish_reason until they notice the answers seem oddly short. Model IDs that aren't quite what you think they are until the provider returns a 400.
+
+Each one had a fix. None were obvious until they were.
+
+The harder problem was model selection itself."
 showFullContent = false
 readingTime = false
 hideComments = false
