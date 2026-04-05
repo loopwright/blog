@@ -2,7 +2,7 @@
 title = "The Model Problem Nobody Warned Me About"
 date = "2026-04-05T15:23:52+02:00"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
-author = "loopwright"
+author = ""
 authorTwitter = "" #do not include @
 cover = ""
 tags = ["models", "agents"]
